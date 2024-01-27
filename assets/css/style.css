@@ -1,0 +1,439 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+	--primary-color:#efbb20;
+	--secondary-color:#2c353d;
+	--gray-color:#9c9c9c;
+	--black-color:#000;
+	--white-color:#fff;
+	--sub-font:MarceMetrophobicllus;
+	--main-font:Inter;
+	--fs-12:12px;
+	--fs-13:13px;
+	--fs-15:15px;
+	--fs-20:20px;
+	--fs-28:28px;
+	--fs-30:30px;
+	--fs-11:11px;
+	--fw-100:100;
+	--fw-200:200;
+	--fw-300:300;
+	--fw-400:400;
+	--fw-500:500;
+	--fw-600:600;
+	--fw-700:700;
+	--fw-800:800;
+	--fw-900:900;
+	--padding-left:12px;
+	--padding-right:12px;
+	--l-h:1.5;
+	--transition:all 0.5s;
+}
+.w-1{
+	width:8.33%;
+}
+.w-2{
+	width:16.66%;
+}
+.w-3{
+	width:25%;
+}
+.w-4{
+	width:33.33%;
+}
+.w-5{
+	width:41.66%;
+}
+.w-6{
+	width:50%;
+}
+.w-7{
+	width:58.33%;
+}
+.w-8{
+	width:66.66%;
+}
+.w-9{
+	width:75%;
+}
+.w-10{
+	width:83.33%;
+}
+.w-11{
+	width:91.66%;
+}
+.w-12{
+	width:100%;
+}
+.w-1,.w-2,.w-3,.w-4,.w-5,.w-6,.w-7,.w-8,.w-9,.w-10,.w-11,.w-12{
+	padding-left:var(--padding-left);
+	padding-right:var(--padding-right);
+}
+body{
+	font-family:var(--main-font);
+	font-weight:var(--fw-500);
+	color:var(--secondary-color);
+	line-height:var(--l-h);
+}
+.container{
+	max-width:1310px;
+	margin:0 auto;
+	padding-left:-var(--padding-left);
+	padding-right:-var(--padding-right);
+}
+a{
+	text-decoration:none;
+}
+ul,ol,li{
+	list-style:none;
+}
+img{
+	display:block;
+	width:100%;
+}
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:-12px;
+	margin-right:-12px;
+}
+.d-flex{
+	display:flex;
+	flex-wrap:wrap;
+}
+.justify-between{
+	justify-content:space-between;
+}
+.justify-end{
+	justify-content:flex-end;
+}
+.align-center{
+	align-items:center;
+}
+.justify-center{
+	justify-content:center;
+}
+
+/* header start  */
+.header{
+    background-color: var(--white-color);
+}
+.header .logo img{
+    width: 196px;
+}
+.header .menu ul , .header .menu{
+    width: 100%;
+}
+.header .menu ul li a{
+    font-size: var(--fs-15);
+    color: var(--secondary-color);
+    font-weight: var(--fw-700);
+}
+.d-none{
+    display: none;
+}
+header .menu{
+	position: fixed;
+	width: 100%;
+	background-color: #efbb20;
+	left:0;
+	top:90px;
+	z-index: 99999;
+}
+header .menu ul{
+	flex-direction: column;
+}
+header ul li{
+	padding: 5px 20px;
+}
+/* header end */
+
+/* banner star  */
+.banner{
+    background-image: url(../img/superb-backyard-1500x630.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+.banner .bg-color{
+    background-color: #0000004f;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index:-2;
+    top: 0;
+    left: 0;
+}
+.banner .banner-content h1{
+    font-size: var(--fs-28);
+    color: var(--white-color);
+    font-weight: var(--fw-700);
+}
+.banner .banner-content p{
+    font-size: var(--fs-15);
+    color: var(--white-color);
+    padding-top:10px;
+    padding-bottom: 50px;
+}
+.banner .banner-content a{
+    padding: 15px 22px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: var(--white-color);
+    font-size: 14px;
+    margin-right: 10px;
+    transition: var(--transition);
+    display: inline-block;
+}
+.banner .banner-content a:hover,.about .about-btn a:hover{
+    opacity: 80%;
+}
+.banner .banner-content .btn{
+    background-color: var(--primary-color);
+    border: 0;
+}
+ .about{
+    background-color: #efbb20f8;
+    position: relative;
+    z-index: 1;
+    padding: 60px 0;
+ }
+.about .about-bg{
+    background-image: url(../img/house-wire-model-fade-white-1500x1085.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-2;
+    width: 100%;
+    height: 100%;
+}
+.about h2{
+    color: var(--white-color);
+    font-size: var(--fs-28);
+    font-weight: var(--fw-400);
+}
+.about .about-btn a{
+    padding: 15px 30px 13px;
+    border-radius: 100px;
+    border: 2px solid #fff;
+    color: var(--white-color);
+    font-size: var(--fs-15);
+    font-weight: var(--fw-600);
+    transition: var(--transition);
+}
+/* banner end */
+
+/* service start  */
+.service{
+    padding: 100px 0;
+}
+.title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.title h1 span{
+    color: var(--primary-color);
+}
+.title h1{
+    font-size: var(--fs-28);
+    font-weight: var(--fw-500);
+    position: relative;
+}
+.title h1:after{
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 50%;
+    right: 59%;
+    transform: translate(-50% , -50%);
+}
+.service .service-content .service-img img{
+    width: 354px;
+}
+.line{
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+    margin: 10px 0;
+}
+.service .service-content h3{
+    font-size: var(--fs-20);
+    font-weight: var(--fw-500);
+    padding-top: 30px;
+}
+.service .service-content h3 span{
+    color: var(--primary-color);
+}
+.service .service-content p{
+    color: var(--gray-color);
+    font-size: var(--fs-15);
+    font-weight: var(--fw-400);
+}
+.pt-5{
+    padding-top: 50px;
+}
+/* service end */
+
+/* why us start  */
+.us{
+    background-color: #2c353d;
+    position: relative;
+    z-index: 1;
+    padding: 50px 0;
+    color: var(--white-color);
+}
+.us .about-bg{
+    background-image: url(../img/house-wire-model-fade-white-1500x1085.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:-2;
+    width: 100%;
+    height: 100%;
+}
+.us .title{
+    color: var(--white-color);
+}
+.us .us-content i{
+    font-size: 27px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid var(--gray-color);
+    text-align: center;
+    line-height: 70px;
+}
+.us .us-content h4{
+    font-size: 19px;
+    padding-bottom: 5px;
+}
+.us .us-content p{
+    font-size:15px;
+    font-weight: var(--fw-400);
+}
+/* why us end */
+
+/* work start  */
+.work{
+    padding: 100px 0;
+}
+.work .work-img img{
+    height: 312px;
+    opacity: 70%;
+    transition: var(--transition);
+}
+.work .work-img{
+    position: relative;
+    overflow: hidden;
+}
+.work .work-img .work-box{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    padding: 15px 0 0 20px;
+    background-color: #f1f1f1;
+    bottom: -60px;
+    left: 0;
+    transition: var(--transition);
+}
+.work .work-box h4{
+    color: var(--secondary-color);
+}
+.work .work-img:hover img{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.work .work-img:hover .work-box{
+    bottom: 0;
+}
+.pt-4{
+    padding-top: 30px;
+}
+/* work end */
+
+/* customer stat  */
+.customer{
+    padding-bottom: 100px;
+}
+.customer .customer-logo{
+    border: 1px solid #e1e1e1;
+    margin: 0 -12px;
+}
+/* customer end */
+
+/* footer star  */
+.footer{
+    padding: 100px 0;
+    background-color: #2c353d;
+    color: #fff;
+}
+.footer-content{
+    padding-right: 50px;
+}
+.footer .footer-content h3{
+    padding: 10px 0;
+    font-size: 16px;
+    color: #e1e1e1;
+    border-top: 1px solid #5b646b;
+    border-bottom: 1px solid #5b646b;
+}
+.footer ul li{
+    padding-bottom: 15px;
+}
+.footer .footer-content p , .footer .footer-content ul{
+    padding-top: 20px;
+    font-size: var(--fs-15);
+    font-weight: var(--fw-400);
+}
+.footer .footer-content .footer-img{
+    padding: 5px;
+    border: 1px solid #5b646b;
+    background-color: #454e57;
+}
+.footer .footer-content .footer-img img{
+    width: 28px;
+}
+.footer .footer-content .footer-details h5,.footer .footer-content .footer-details a {
+    color: #e1e1e1;
+    font-size: 12px;
+    font-weight: var(--fw-500);
+    padding-left: 10px;
+}
+.copyright{
+    background-color: #5b646b;
+    padding: 10px 0 ;
+}
+.copyright p{
+    color: #fff;
+    font-size: 12px;
+}
+.copyright ul li{
+    padding-right:20px;
+}
+.copyright ul li:hover a{
+    color: var(--primary-color);
+}
+.copyright ul li a{
+    font-size: 12px;
+    color: #fff;
+    transition: var(--transition);
+}
+/* footer end */
